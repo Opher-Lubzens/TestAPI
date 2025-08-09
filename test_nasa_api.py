@@ -6,9 +6,10 @@ from typing import Any
 import pytest, requests
 from jsonschema import validate
 
+from nasa_config import API_KEY_NASA
 from nasa_schemas import APOD_SINGLE_SCHEMA, APOD_MULTI_SCHEMA
 
-API_KEY_NASA = '13HsxoQe9A9ofBg6NGMEhc9xUYKG8HrtSe6EV5xN'
+
 
 def request_apod_and_test_status(query_params: dict[str, Any]):
     query_string = ''
